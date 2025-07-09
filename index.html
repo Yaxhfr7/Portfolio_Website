@@ -11,6 +11,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+/* Add this style block inside your <head> tag or in your main CSS file */
+.animated-gradient {
+  background: linear-gradient(270deg, #ff512f, #dd2476, #1fa2ff, #12d8fa, #a6ffcb, #ff512f);
+  background-size: 1200% 1200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientMove 6s ease-in-out infinite;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+p:hover,
+a:hover,
+span:hover,
+li:hover,
+label:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s cubic-bezier(.4,2,.6,1);
+  z-index: 1;
+  position: relative;
+}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,31 +56,49 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>YASH TYAGI<br />
-						PORTFOLIO</h1>
-						<p>Data Analyst well versed in SQL, Python, Tableau, Power BI <a href="https://github.com/Yaxhfr7">@Yaxhfr7</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+						<h1>
+        YASH TYAGI<br />
+        <span class="animated-gradient">PORTFOLIO</span>
+    </h1>
+    <p>Data Analyst | Tech Enthusiast | Problem Solver</p>
+    <p><a href="https://github.com/Yaxhfr7/Portfolio-Projects">GitHub:@Yaxh</a>.</p>
+    <ul class="actions">
+        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+    </ul>
 					</div>
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Data Analyst</a>
+						<a href="https://drive.google.com/file/d/172uSqCcWJ_B1ke1AmWssxOwZHA7TnLCo/view?usp=drivesdk" class="logo">RESUME</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html"></a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
+							<li class="active"><a href=""></a></li>
+							<li><a href="generic.html"></a></li>
+							<li><a href="elements.html"></a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li>
+                                <a href="https://www.linkedin.com/in/yash-tyagi-9a38b1350/" class="icon brands fa-linkedin" target="_blank">
+                                    <span class="label">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Yaxhfr7/Portfolio-Projects" class="icon brands fa-github" target="_blank">
+                                    <span class="label">GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/file/d/172uSqCcWJ_B1ke1AmWssxOwZHA7TnLCo/view?usp=drivesdk"
+           class="icon solid fa-file-alt"
+           target="_blank"
+           style="font-size:2em; display:flex; align-items:center; gap:8px;">
+            <span class="label">Resume</span>
+            <span style="font-size:1rem; font-weight:bold; margin-left:6px;">Resume</span>
+        </a>
+                            </li>
 						</ul>
 					</nav>
 
@@ -54,13 +109,15 @@
 							<article class="post featured">
 								<header class="major">
 									<span class="date"></span>
-									<h2><a href="https://github.com/Yaxhfr7/Portfolio-Projects/tree/main/MySQL%20Data%20Cleaning%20%2B%20EDA%20Project%20on%20World%20Layoffs">MySQL Data Cleaning & EDA on World Layoff<br />
-									</a></h2>
-									<p>Analyzed global layoff trends using MySQL, performing extensive data cleaning and exploratory data analysis (EDA). Extracted insights from structured datasets to understand industry-wide layoffs and workforce shifts</p>
+									<h2><a href="https://github.com/Kunal9717/Movie_Success_Prediction">Movie Success Prediction Using Machine Learning<br /></a></h2>
+									<p style="margin: 0; line-height: 1.2;">Python, Scikit-learn, Pandas, Power BI</p>
+									<p>• Developed a classification model to predict movie success (Hit, Average, Flop) using IMDb scores and metadata from 5,000+ movies.</p>
+									<p>• Conducted EDA and feature engineering; implemented Logistic Regression, Random Forest, and Gradient Boosting to optimize precision for "Hit" class.</p>
+									<p>• Built a Power BI dashboard to visualize correlations among budget, genre, gross and performance categories for data-driven insights.</p>
 								</header>
-								<a href="https://github.com/Yaxhfr7/Portfolio-Projects/tree/main/MySQL%20Data%20Cleaning%20%2B%20EDA%20Project%20on%20World%20Layoffs" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="https://github.com/Kunal9717/Movie_Success_Prediction" class="image main"><img src="images/movie.jpg" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/Yaxhfr7/Portfolio-Projects/tree/main/MySQL%20Data%20Cleaning%20%2B%20EDA%20Project%20on%20World%20Layoffs" class="button large">View Project</a></li>
+									<li><a href="https://github.com/Kunal9717/Movie_Success_Prediction" class="button large">View Project</a></li>
 								</ul>
 							</article>
 
@@ -69,28 +126,36 @@
 								<article>
 									<header>
 										<span class="date"></span>
-										<h2><a href="https://github.com/Yaxhfr7/Portfolio-Projects/tree/main/Netflix_My_SQL_Project">Netflix MySQL Project<br />
+										<h2><a href="https://github.com/Kunal9717/World_layoffs_SQL">Layoffs Data Analysis Project<br />
 										</a></h2>
 									</header>
-									<a href="https://github.com/Yaxhfr7/Portfolio-Projects/tree/main/Netflix_My_SQL_Project" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Designed and executed SQL queries to analyze Netflix's content library, user preferences, and streaming trends. Explored data-driven insights to understand content distribution and audience engagement.</p>
+									<a href="https://github.com/Kunal9717/World_layoffs_SQL" class="image fit"><img src="images/PICY.jpg" alt="" /></a>
+									<p>• SQL, PostgreSQL/MySQL, Data Cleaning, EDA </p>
+									<p>• Cleaned and analyzed a global tech layoffs dataset using SQL to uncover trends by company, country, industry, and funding stage. </p>
+									<p>• Applied robust data cleaning techniques to ensure accuracy and consistency in records across time periods and sectors. </p>
+									<p>• Performed SQL-based exploratory data analysis to identify layoff patterns, peak periods, and sector-specific trends.	</p> 
+									<p>• Delivered actionable insights on workforce reductions, demonstrating strong SQL querying and analytical skills.  </p>
 									<ul class="actions special">
-										<li><a href="https://github.com/Yaxhfr7/Portfolio-Projects/tree/main/Netflix_My_SQL_Project" class="button">View Project</a></li>
+										<li><a href="https://github.com/Kunal9717/World_layoffs_SQL" class="button">View Project</a></li>
 									</ul> 
 								</article>
 								<article>
 									<header>
 										<span class="date"></span>
-										<h2><a href="https://github.com/Yaxhfr7/Portfolio-Projects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb">Amazon Web Scraper Project<br />
+										<h2><a href="https://github.com/Kunal9717/Super_Store_Sales_Dashboard">Super Store Sales Dashboard<br />
 										using Python</a></h2>
 									</header>
-									<a href="https://github.com/Yaxhfr7/Portfolio-Projects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>In this project we scrape data from Amazon to analyze price data for products.</p>
+									<a href="https://github.com/Kunal9717/Super_Store_Sales_Dashboard" class="image fit"><img src="images/sales.jpg" alt="" /></a>
+									<p>• Power BI, Excel, DAX </p>
+										<p>• Built an interactive dashboard to analyze retail KPIs including sales, profit, order volume, and shipping efficiency across regions. </p>
+										<p>• Used Power Query for data transformation and developed custom DAX measures for performance tracking (Total Sales: $2M,
+											Profit: $175K, Orders: 22K). </p>
+										<p>• Designed dynamic visualizations including bar graphs, maps, and line charts to enable real-time insights for business stakeholders. </p>
 									<ul class="actions special">
-										<li><a href="https://github.com/Yaxhfr7/Portfolio-Projects/blob/main/Amazon%20Web%20Scraper%20Project.ipynb" class="button">View Project</a></li>
+										<li><a href="https://github.com/Kunal9717/Super_Store_Sales_Dashboard" class="button">View Project</a></li>
 									</ul>
 								</article>
-								<article>
+								<!-- <article>
 									<header>
 										<span class="date"></span>
 										<h2><a href="https://github.com/Yaxhfr7/Portfolio-Projects/blob/main/Automate%20API%20Extraction%20Project.ipynb">Automate API Extraction Project<br />
@@ -101,7 +166,7 @@
 									<ul class="actions special">
 										<li><a href="https://github.com/Yaxhfr7/Portfolio-Projects/blob/main/Automate%20API%20Extraction%20Project.ipynb" class="button">Full Story</a></li>
 									</ul>
-								</article>
+								</article> -->
 								<!-- <article>
 									<header>
 										<span class="date">April 14, 2017</span>
@@ -173,28 +238,35 @@
 									<div class="field">
 										<label for="message">Message</label>
 										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
+									</div> -->
+								<!-- <!-- </div>
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
 							</form>
 						</section>
 						<section class="split contact">
-							<section class="alt"> -->
+							<section class="alt">
 								<h3>Address</h3>
 								<p>Burari,<br />
-								Delhi - 110084</p>
+								Delhi - 110084</p> -->
 							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+91 9818463346</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">tyagiyash627@gmail.com</a></p>
-							</section>
-							<section>
+							<section class="split contact">
+    <section>
+        <h3>Phone</h3>
+        <p><a href="#">+91 9818463346</a></p>
+    </section>
+    <section>
+        <h3>Email</h3>
+        <p><a href="#">tyagiyaxh627@gmail.com</a></p>
+    </section>
+    <section>
+        <h3>Address</h3>
+        <p>Burari, Delhi - 110084</p>
+    </section>
+</section>
+
+							
 								<!-- <h3>Social</h3>
 								<ul class="icons alt"> -->
 									<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
